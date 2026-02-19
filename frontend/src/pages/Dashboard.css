@@ -1,0 +1,317 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ========================================
+   HEADER - Professional Header Design
+   ======================================== */
+.dashboard-header {
+    height: 64px;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header-left {
+    flex-shrink: 0;
+}
+
+.app-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-icon {
+    font-size: 1.75rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.user-email {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    border-color: var(--primary-green);
+    transform: rotate(20deg);
+}
+
+.logout-btn {
+    padding: 0.5rem 1.25rem;
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+    background-color: var(--error);
+    color: white;
+    border-color: var(--error);
+}
+
+/* ========================================
+   MAIN LAYOUT CONTAINER
+   ======================================== */
+.dashboard-layout {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/* ========================================
+   SEARCH SECTION - Professional Input Design
+   ======================================== */
+.search-section {
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.search-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 4px 12px rgba(0, 208, 156, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+}
+
+.search-input::placeholder {
+    color: var(--text-secondary);
+}
+
+.search-btn {
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, var(--primary-green), var(--primary-green-hover));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 208, 156, 0.2);
+}
+
+.search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 208, 156, 0.3);
+}
+
+.search-btn:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   FOOTER - Lighter, Professional Design
+   ======================================== */
+.dashboard-footer {
+    height: 64px;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 0 2rem;
+    flex-shrink: 0;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* For absolute positioning of copyright if needed, or use flex */
+}
+
+.footer-content {
+    flex: 1;
+    max-width: 100%;
+}
+
+.footer-content p {
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    text-align: justify;
+}
+
+
+
+.footer-content strong {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.footer-copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.8;
+    white-space: nowrap;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 1024px) {
+    .dashboard {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .dashboard-layout {
+        flex-direction: column;
+        height: auto;
+        overflow: visible;
+    }
+
+    .main-content {
+        min-height: 400px;
+        overflow: visible;
+    }
+
+    .search-section {
+        padding: 1.5rem;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        padding: 0 1rem;
+        height: 56px;
+    }
+
+    .header-right {
+        gap: 0.75rem;
+    }
+
+    .user-email {
+        display: none;
+    }
+
+    .app-title {
+        font-size: 1.25rem;
+    }
+
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+
+    .search-section {
+        padding: 1.25rem;
+    }
+
+    .footer-content p {
+        font-size: 0.75rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-header {
+        padding: 0 0.75rem;
+    }
+
+    .app-title {
+        font-size: 1.1rem;
+    }
+
+    .search-section {
+        padding: 1rem;
+    }
+
+    .search-input {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .search-btn {
+        padding: 0.875rem;
+    }
+
+    .dashboard-footer {
+        padding: 1.25rem 1rem;
+    }
+}
