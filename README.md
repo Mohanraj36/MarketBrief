@@ -75,11 +75,11 @@ MarketBrief/
 - **Real-Time Prices:** Yahoo Finance API (via CORS proxy fallback)
 
 ## ⚠️ Important API Limitations
--Free Tier Considerations
--API	Limit	Stock Support	Notes
--Alpha Vantage	5 req/min	US Stocks	Indian stocks may fail; use for fundamentals
--NewsAPI.org	100 req/day	Global	Free tier has limited articles
--Groq API	30 req/min	-	Free tier available; excellent for summaries
+- Free Tier Considerations
+- API	Limit	Stock Support	Notes
+- Alpha Vantage	5 req/min	US Stocks	Indian stocks may fail; use for fundamentals
+- NewsAPI.org	100 req/day	Global	Free tier has limited articles
+- Groq API	30 req/min	-	Free tier available; excellent for summaries
 
 ## ⏳ IMPORTANT: Wait 2-3 Minutes Between Stock Searches
 ### Due to API rate limits, please wait 2-3 minutes between analyzing different stocks. This prevents hitting rate limits and ensures consistent data retrieval.
