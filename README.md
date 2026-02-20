@@ -44,14 +44,14 @@ MarketBrief/
 ### Core Functionality
 
 - **Real-Time Stock Data:** Live price quotes, performance metrics, and technical indicators
-- **-AI-Powered News Summaries:** Intelligent analysis of market news using Groq AI
-- **-Search History:** Persistent user history with saved AI summaries
-- **-Responsive Design:** Dark/Light theme support with mobile-friendly UI
-- **-Secure Authentication:** JWT-based user authentication and authorization
+- **AI-Powered News Summaries:** Intelligent analysis of market news using Groq AI
+- **Search History:** Persistent user history with saved AI summaries
+- **Responsive Design:** Dark/Light theme support with mobile-friendly UI
+- **Secure Authentication:** JWT-based user authentication and authorization
 
 ### Technical Highlights
-- **-Multi-Exchange Support:** NSE (Indian stocks) and US stock symbols
-- **-User Dashboard:** Personalized stock tracking and analysis interface
+- **Multi-Exchange Support:** NSE (Indian stocks) and US stock symbols
+- **User Dashboard:** Personalized stock tracking and analysis interface
 
 ## 🛠️ Tech Stack
 
@@ -85,12 +85,12 @@ MarketBrief/
 ### Due to API rate limits, please wait 2-3 minutes between analyzing different stocks. This prevents hitting rate limits and ensures consistent data retrieval.
 
 In Indian Stock Support
--Works: NSE stocks with .NS suffix (e.g., TCS.NS, RELIANCE.NS)
--Limitation: Alpha Vantage free tier primarily supports US stocks
--Workaround: Append .NS suffix for Indian stock symbols
--Native Support: Full API support for US stocks
--No Suffix Needed: Enter symbols like AAPL, MSFT, GOOGL
--Faster Response: Optimized API integration for US market data
+- Works: NSE stocks with .NS suffix (e.g., TCS.NS, RELIANCE.NS)
+- Limitation: Alpha Vantage free tier primarily supports US stocks
+- Workaround: Append .NS suffix for Indian stock symbols
+- Native Support: Full API support for US stocks
+- No Suffix Needed: Enter symbols like AAPL, MSFT, GOOGL
+- Faster Response: Optimized API integration for US market data
 
 # 📋 Prerequisites
 - Requirements
@@ -100,14 +100,14 @@ In Indian Stock Support
 - Git
 
 # API Keys Required
--Alpha Vantage - Stock fundamental data
--Get key: https://www.alphavantage.co/api/
+- Alpha Vantage - Stock fundamental data
+- Get key: https://www.alphavantage.co/api/
 
--NewsAPI.org - Market news articles
--Get Key: https://newsapi.org/
+- NewsAPI.org - Market news articles
+- Get Key: https://newsapi.org/
 
--Groq API - AI-powered news summaries
--Get key: https://console.groq.com/
+- Groq API - AI-powered news summaries
+- Get key: https://console.groq.com/
 
 ### 📄 License
 - **This project is provided as-is for educational purposes. Not registered with SEBI (Securities and Exchange Board of India).**
