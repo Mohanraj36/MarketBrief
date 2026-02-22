@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class StockOverviewResponseDto {
-    // Basic Info
+    // stock info
     private String symbol;
     private String name;
     private String price;
@@ -22,7 +22,7 @@ public class StockOverviewResponseDto {
     private String exchange;
     private String country;
 
-    // Performance Metrics
+    // performance
     private String dayHigh;
     private String dayLow;
     private String week52High;
@@ -36,7 +36,7 @@ public class StockOverviewResponseDto {
     private String week50DayAverage;
     private String week200DayAverage;
 
-    // Fundamental Data
+    // fundamental
     private String marketCap;
     private String peRatio;
     private String pbRatio;
