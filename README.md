@@ -113,4 +113,4 @@ In Indian Stock Support
 - **This project is provided as-is for educational purposes. Not registered with SEBI (Securities and Exchange Board of India).**
 
 ## ⚠️ Disclaimer
-- **This platform is NOT a financial advisor. All information is for educational purposes only. Do not make investment decisions based solely on this platform's analysis. Consult with a certified financial advisor before investing.***
+- **This project is NOT a financial advisor. All information is for educational purposes only. Do not make investment decisions based solely on this platform's analysis. Consult with a certified financial advisor before investing.***
