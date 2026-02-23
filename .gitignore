@@ -8,7 +8,7 @@ TRADINGVIEWCUSTOMCHART.txt
 txt.txt
 LIGHTWEIGHT_CHARTS_SETUP.md
 ai summary
-
+settings/
 # === Environment Variables - NEVER COMMIT ===
 .env
 .env.local
