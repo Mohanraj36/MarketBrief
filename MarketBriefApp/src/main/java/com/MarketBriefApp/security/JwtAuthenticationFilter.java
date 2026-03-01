@@ -50,6 +50,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 			}
 		} catch (Exception e) {
 			// Token validation failed
+			e.printStackTrace();
 		}
 		filterChain.doFilter(request, response);
 	}
