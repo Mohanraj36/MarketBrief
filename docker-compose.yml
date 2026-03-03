@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./MarketBriefApp # Path to the backend directory
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    # Optional: configure environment variables for database connection if applicable
+    # environment:
+      # SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/product
+
+  frontend:
+    build:
+      context: ./frontend # Path to the frontend directory
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80" # Map host port 3000 to container port 80 (Nginx default)
+    networks:
+      - app-network
+    environment:
+      # This allows the React app to access the backend using the service name 'backend'
+      REACT_APP_BACKEND_URL: http://backend:8080 
+    depends_on:
+      - backend
+
+networks:
+  app-network:
+    driver: bridge
